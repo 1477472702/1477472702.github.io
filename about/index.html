@@ -606,7 +606,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["no"]
+                data: ["no，js"]
             }
         ],
         yAxis: [
@@ -789,8 +789,8 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/no/">
-                <span class="chip center-align waves-effect waves-light chip-default">no</span>
+            <a href="/tags/no%EF%BC%8Cjs/">
+                <span class="chip center-align waves-effect waves-light chip-default">no，js</span>
             </a>
             
             
@@ -1136,7 +1136,13 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
-
+<script type="text/javascript">
+//只在桌面版网页启用特效
+var windowWidth = $(window).width();
+if (windowWidth > 768) {
+    document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+}
+</script>
 </body>
 
 </html>

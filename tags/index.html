@@ -367,10 +367,10 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/no/" title="no: 1">
+                <a href="/tags/no%EF%BC%8Cjs/" title="no，js: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="no" style="background-color: #F9EBEA;">no
+                            data-tagname="no，js" style="background-color: #F9EBEA;">no，js
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -399,7 +399,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"no","weight":1,"link":"/tags/no/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"no，js","weight":1,"link":"/tags/no，js/"}], {
         autoResize: true
     });
 </script>
@@ -691,7 +691,13 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
-
+<script type="text/javascript">
+//只在桌面版网页启用特效
+var windowWidth = $(window).width();
+if (windowWidth > 768) {
+    document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+}
+</script>
 </body>
 
 </html>

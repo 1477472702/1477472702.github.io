@@ -310,7 +310,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -431,8 +431,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/no/">
-                                <span class="chip bg-color">no</span>
+                            <a href="/tags/no%EF%BC%8Cjs/">
+                                <span class="chip bg-color">no，js</span>
                             </a>
                         
                     </div>
@@ -485,8 +485,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/no/">
-                                    <span class="chip bg-color">no</span>
+                                <a href="/tags/no%EF%BC%8Cjs/">
+                                    <span class="chip bg-color">no，js</span>
                                 </a>
                             
                         </div>
@@ -540,8 +540,7 @@
                 <a href="/2021/01/16/first-test/">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="格言">
+                        <img src="/images/1.jpg" class="responsive-img" alt="格言">
                         
                         <span class="card-title">格言</span>
                     </div>
@@ -568,8 +567,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/no/">
-                        <span class="chip bg-color">no</span>
+                    <a href="/tags/no%EF%BC%8Cjs/">
+                        <span class="chip bg-color">no，js</span>
                     </a>
                     
                 </div>
@@ -1022,7 +1021,13 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
-
+<script type="text/javascript">
+//只在桌面版网页启用特效
+var windowWidth = $(window).width();
+if (windowWidth > 768) {
+    document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+}
+</script>
 </body>
 
 </html>

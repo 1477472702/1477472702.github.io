@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签: no, 棋仙丶胡下">
+    <meta name="keywords" content="标签: no，js, 棋仙丶胡下">
     <meta name="description" content="每一个不曾起舞的日子，都是对生命的辜负">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签: no | 棋仙丶胡下</title>
+    <title>标签: no，js | 棋仙丶胡下</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -367,10 +367,10 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/no/" title="no: 1">
+                <a href="/tags/no%EF%BC%8Cjs/" title="no，js: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="no" style="background-color: #F9EBEA;">no
+                            data-tagname="no，js" style="background-color: #F9EBEA;">no，js
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -386,13 +386,12 @@
         <div class="row tags-posts">
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="no" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="no，js" data-aos="fade-up">
                 <div class="card">
                     <a href="/2021/01/16/first-test/">
                         <div class="card-image tag-image">
                             
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="格言">
+                            <img src="/images/1.jpg" class="responsive-img" alt="格言">
                             
                             <span class="card-title">格言</span>
                         </div>
@@ -702,7 +701,13 @@ $(function () {
     
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
-
+<script type="text/javascript">
+//只在桌面版网页启用特效
+var windowWidth = $(window).width();
+if (windowWidth > 768) {
+    document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+}
+</script>
 </body>
 
 </html>
